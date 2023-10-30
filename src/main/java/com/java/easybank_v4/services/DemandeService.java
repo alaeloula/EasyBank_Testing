@@ -8,10 +8,12 @@ import java.util.Optional;
 
 public class DemandeService {
     private DemandeI demandeI;
-
     public DemandeService(DemandeI demandeI) {
         this.demandeI = demandeI;
     }
+//    public void setDemandeI(DemandeI demandeI){
+//        this.demandeI = demandeI;
+//    }
     public Optional<DemanderCredit> ajouter(DemanderCredit demande) {
         Optional<DemanderCredit> optdemande=demandeI.ajoute(demande);
         return optdemande;

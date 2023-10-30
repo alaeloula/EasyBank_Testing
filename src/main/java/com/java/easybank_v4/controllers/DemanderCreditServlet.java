@@ -18,7 +18,7 @@ import java.io.PrintWriter;
 @WebServlet(name = "demande", urlPatterns ={"/demande_test"} )
 public class DemanderCreditServlet extends HttpServlet {
     private DemandeI demandeDao=new DemandeDao();
-    private DemandeService demandeService=new DemandeService(demandeDao);
+    private DemandeService demandeService= new DemandeService(demandeDao);
     double mensualite;
     @Override
     public void init() throws ServletException {

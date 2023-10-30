@@ -11,7 +11,6 @@ import java.util.Optional;
 
 public class DemandeDao implements DemandeI {
 
-
     @Override
     public Optional<DemanderCredit> ajoute(DemanderCredit demande) {
         Transaction tx = null;
